@@ -1,8 +1,8 @@
 alias po="xclip -sel clip -i"
 alias vim="vim -p"
 alias gvim="gvim -p"
-alias ls="ls --color"
-alias ll="ls -al --color"
+alias ls="ls -N --color"
+alias ll="ls -N -al --color"
 alias grep="grep --color"
 alias egrep="egrep --color"
 
