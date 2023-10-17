@@ -18,6 +18,8 @@ Plugin 'gmarik/vundle'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rhysd/conflict-marker.vim'
+Plugin 'nvie/vim-flake8'
+Plugin 'jjo/vim-cue'
 call vundle#end() 
 
 highlight YcmWarningSection ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
@@ -110,5 +112,6 @@ let g:ycm_goto_buffer_command = 'new-tab'
 autocmd BufWritePre *.cpp :%s/\s\+$//e
 autocmd BufWritePre *.h :%s/\s\+$//e
 
-
 autocmd BufEnter * silent! lcd %:p:h
+
+autocmd BufReadPost *.cue set syntax=cue
