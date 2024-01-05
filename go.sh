@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# ./apt.sh
+cp -v ./sources.list.d/* /etc/apt/sources.list.d
+
+./apt.sh
 
 # Setup vim
 cp .vimrc ~/.vimrc
