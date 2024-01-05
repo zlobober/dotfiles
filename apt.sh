@@ -1,2 +1,4 @@
 #!/bin/bash
-apt-get install $(cat ./apt_pkgs.txt)
+
+apt update
+apt install $(cat ./apt_pkgs.txt)
