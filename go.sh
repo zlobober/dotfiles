@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./apt.sh
+# ./apt.sh
 
 # Setup vim
 cp .vimrc ~/.vimrc
