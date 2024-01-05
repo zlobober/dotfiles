@@ -1,7 +1,6 @@
 #!/bin/bash
 
-cp -v ./sources.list.d/* /etc/apt/sources.list.d
-
+./apt_repos.sh
 ./apt.sh
 
 # Setup vim
